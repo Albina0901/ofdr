@@ -38,7 +38,7 @@ body {
 input,
 button,
 textarea {
-	font-family: 'Roboto', sans-serif;
+	font-family: $fontFamily;
 }
 input::-ms-clear {
 	display: none;
