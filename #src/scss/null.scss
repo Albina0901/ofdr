@@ -28,12 +28,9 @@ section {
 html,
 body {
 	height: 100%;
-	min-width: $minWidth;
 }
 body {
 	line-height: 1;
-	font-family: $fontFamily;
-	//text-rendering: optimizeLegibility;
 	-ms-text-size-adjust: 100%;
 	-moz-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
@@ -41,7 +38,7 @@ body {
 input,
 button,
 textarea {
-	font-family: $fontFamily;
+	font-family: 'Roboto', sans-serif;
 }
 input::-ms-clear {
 	display: none;

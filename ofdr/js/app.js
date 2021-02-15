@@ -124,9 +124,7 @@ let sliderSlider = new Swiper('.slider', {
 });
 
 
-tippy('.tippy', {
-	content: "I'm a Tippy tooltip!",
-});
+
 var ua = window.navigator.userAgent;
 var msie = ua.indexOf("MSIE ");
 var isMobile = { Android: function () { return navigator.userAgent.match(/Android/i); }, BlackBerry: function () { return navigator.userAgent.match(/BlackBerry/i); }, iOS: function () { return navigator.userAgent.match(/iPhone|iPad|iPod/i); }, Opera: function () { return navigator.userAgent.match(/Opera Mini/i); }, Windows: function () { return navigator.userAgent.match(/IEMobile/i); }, any: function () { return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows()); } };
@@ -185,10 +183,10 @@ if (location.hash) {
 }
 //=================
 //Menu
-let iconMenu = document.querySelector(".icon-menu");
+let iconMenu = document.querySelector(".menu__burger");
 if (iconMenu != null) {
 	let delay = 500;
-	let menuBody = document.querySelector(".menu__body");
+	let menuBody = document.querySelector(".menu");
 	iconMenu.addEventListener("click", function (e) {
 		if (unlock) {
 			body_lock(delay);
@@ -198,8 +196,8 @@ if (iconMenu != null) {
 	});
 };
 function menu_close() {
-	let iconMenu = document.querySelector(".icon-menu");
-	let menuBody = document.querySelector(".menu__body");
+	let iconMenu = document.querySelector(".menu__burger");
+	let menuBody = document.querySelector(".menu");
 	iconMenu.classList.remove("_active");
 	menuBody.classList.remove("_active");
 }
